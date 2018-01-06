@@ -1,12 +1,12 @@
 Circ
 ====
 
-*Making just ok CTX imager vrt mosaics since 2018*
+*Making just ok CTX mosaics since 2018*
 
 Circ builds CTX mosaics by reading the CTX image metadata to select images that
-intersect the bbox the user provides, and then does some basic filtering and
+intersect the bounding box the user provides, and then does some basic filtering and
 stochastic image reduction to come up with a reasonably minimal list of images that cover the bbox
-and have lowish emission angles.
+and have low-ish emission angles.
 
 The images used come from ASU Mars Space Flight Facility viewer.mars.asu.edu.
 
@@ -37,7 +37,7 @@ circ make-vrt 136.0 -7.0 139.5 -3.5 --name gale --em_tol 1.0
 
 ```
 This will create a folder called `gale` in which a bunch of ctx images will be downloaded.
-The bbox passed in here is a bit larger than is truely needed, so some extra images will be downloaded.
+The bbox passed in here is a bit larger than is truly needed, so some extra images will be downloaded.
 If you are running this example it would be worth contracting it by a half to three quarters of a degree for each coordinate.
 
 The VRT image created at the end can then be used directly in applications like QGIS or to construct a merged image (which would take less disk space) using other gdal command line tools like so:
