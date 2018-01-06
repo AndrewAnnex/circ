@@ -13,15 +13,20 @@ setup(
     version  = version,
     packages = ['circ'],
     license  = 'MIT',
-    description = 'A basic CLI to make mosaic vrts from ctx imagery',
+    description = 'A basic CLI to make mosaic vrts from _ctx imagery',
     long_description = readme,
     # Author details
     author='Andrew Annex',
     author_email='annex@jhu.edu',
-    url='https://github.com/andrewannex/circ',
+    url='_https://github.com/andrewannex/circ',
 
     install_requires=['requests', 'fire', 'progressbar2', 'moody', 'geopandas',
-                      'shapely', 'deco'],
+                      'shapely'],
+
+    dependency_links=[
+        'git+ssh://git@github.com/AndrewAnnex/moody.git#egg=moody-0.0.1dev'
+    ],
+
     entry_points={
         'console_scripts': [
             'circ = circ.circ:main'
@@ -29,7 +34,7 @@ setup(
     },
     package_data = {'': ['circ/data/mars_mro_ctx_edr_m_c0a/*'] },
 
-    keywords=['mars', 'nasa', 'ode', 'pds', 'cli', 'tool'],
+    keywords=['mars', 'nasa', '_ode', 'pds', 'cli', 'tool'],
 
     classifiers=[
         'Natural Language :: English',
