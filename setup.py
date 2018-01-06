@@ -20,8 +20,7 @@ setup(
     author_email='annex@jhu.edu',
     url='_https://github.com/andrewannex/circ',
 
-    install_requires=['requests', 'fire', 'progressbar2', 'moody', 'geopandas',
-                      'shapely'],
+    install_requires=['requests', 'fire', 'moody', 'geopandas', 'shapely', 'deco', 'sh'],
 
     dependency_links=[
         'git+ssh://git@github.com/AndrewAnnex/moody.git#egg=moody-0.0.1dev'
@@ -32,6 +31,7 @@ setup(
             'circ = circ.circ:main'
         ]
     },
+
     package_data = {'': ['circ/data/mars_mro_ctx_edr_m_c0a/*'] },
 
     keywords=['mars', 'nasa', '_ode', 'pds', 'cli', 'tool'],
