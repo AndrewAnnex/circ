@@ -21,7 +21,7 @@ setup(
     url='_https://github.com/andrewannex/circ',
     download_url='https://github.com/AndrewAnnex/circ/archive/0.0.1.tar.gz',
 
-    install_requires=['requests', 'fire', 'moody', 'geopandas', 'shapely', 'deco', 'sh'],
+    install_requires=['requests', 'fire', 'moody', 'geopandas', 'shapely', 'deco', 'sh', 'tqdm'],
 
     entry_points={
         'console_scripts': [
