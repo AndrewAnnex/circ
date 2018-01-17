@@ -29,7 +29,9 @@ setup(
         ]
     },
 
-    package_data = {'': ['circ/data/mars_mro_ctx_edr_m_c0a/*'] },
+    include_package_data=True,
+
+    package_data = {'': ['circ/data/mars_mro_ctx_edr_m_c0a/*.*'] },
 
     keywords=['mars', 'nasa', 'ode', 'pds', 'cli', 'tool', 'ctx', 'circ', 'mosaic', 'gdal'],
 
