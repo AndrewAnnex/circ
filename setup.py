@@ -18,7 +18,7 @@ setup(
     # Author details
     author='Andrew Annex',
     author_email='annex@jhu.edu',
-    url='_https://github.com/andrewannex/circ',
+    url='https://github.com/andrewannex/circ',
     download_url='https://github.com/AndrewAnnex/circ/archive/0.0.1.tar.gz',
 
     install_requires=['requests', 'fire', 'moody', 'geopandas', 'shapely', 'deco', 'sh', 'tqdm'],
